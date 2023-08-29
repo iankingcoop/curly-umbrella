@@ -30,11 +30,13 @@ layout: base
 
         .left-paragraph {
             flex: 1;
+            color: white;
         }
 
         .center-paragraph {
             flex: 1;
             text-align: center;
+            color: white;
         }
     </style>
 
@@ -56,14 +58,6 @@ layout: base
     <div class="wrapper">
 
       
-<body>
-    <div class="container">
-        <p class="left-paragraph">This is the paragraph on the left.</p>
-        <p class="center-paragraph">This is the paragraph in the center.</p>
-    </div>
-</body>
-
-      
       <section>
         <div id="title">
           <h1>{{ site.title | default: site.github.repository_name }}</h1>
@@ -75,6 +69,12 @@ layout: base
         <h1 class="page-heading">test before1</h1>
         {{ content }}
         <h1 class="page-heading">test after1</h1>
+        <body>
+            <div class="container">
+                <p class="left-paragraph">This is the paragraph on the left.</p>
+                <p class="center-paragraph">This is the paragraph in the center.</p>
+            </div>
+        </body>
 
       </section>
 

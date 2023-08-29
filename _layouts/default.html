@@ -19,6 +19,26 @@ layout: base
     <link rel="stylesheet" href="{{ '/assets/css/ie.css' | relative_url }}">
     <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <title>Side by Side Paragraphs</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .left-paragraph {
+            flex: 1;
+        }
+
+        .center-paragraph {
+            flex: 1;
+            text-align: center;
+        }
+    </style>
+
+    
   </head>
   <body>
       <div id="header">
@@ -35,6 +55,15 @@ layout: base
 
     <div class="wrapper">
 
+      
+<body>
+    <div class="container">
+        <p class="left-paragraph">This is the paragraph on the left.</p>
+        <p class="center-paragraph">This is the paragraph in the center.</p>
+    </div>
+</body>
+
+      
       <section>
         <div id="title">
           <h1>{{ site.title | default: site.github.repository_name }}</h1>

@@ -55,7 +55,44 @@ layout: base
           </ul>
         </nav>
       </div><!-- end header -->
+
+    <div class="wrapper">
+
       
+      <section>
+        <div id="title">
+          <h1>{{ site.title | default: site.github.repository_name }}</h1>
+          <p>{{ site.description | default: site.github.project_tagline }}</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></span>
+        </div>
+
+        <h1 class="page-heading">test before1</h1>
+        {{ content }}
+        <h1 class="page-heading">test after1</h1>
+        <body>
+            <div class="container">
+                <p class="left-paragraph">This is the paragraph on the left.</p>
+                <p class="center-paragraph">This is the paragraph in the center.</p>
+            </div>
+        </body>
+
+      </section>
+
+    </div>
+    <div class="home">
+      {%- if page.title -%}
+        <h1 class="page-heading">{{ page.title }}</h1>
+      {%- endif -%}
+    
+    
+      {% if site.paginate %}
+        {% assign posts = paginator.posts %}
+      {% else %}
+        {% assign posts = site.posts %}
+      {% endif %}
+    
+    
       {%- if posts.size > 0 -%}
         {%- if page.list_title -%}
           <h2 class="post-list-heading">{{ page.list_title }}</h2>
@@ -93,43 +130,6 @@ layout: base
         {%- endif %}
     
       {%- endif -%}
-    <div class="wrapper">
-
-      
-      <section>
-        <div id="title">
-          <h1>{{ site.title | default: site.github.repository_name }}</h1>
-          <p>{{ site.description | default: site.github.project_tagline }}</p>
-          <hr>
-          <span class="credits left">Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></span>
-        </div>
-
-        <h1 class="page-heading">test before1</h1>
-        {{ content }}
-        <h1 class="page-heading">test after1</h1>
-        <body>
-            <div class="container">
-                <p class="left-paragraph">This is the paragraph on the left.</p>
-                <p class="center-paragraph">This is the paragraph in the center.</p>
-            </div>
-        </body>
-
-      </section>
-
-    </div>
-    <div class="home">
-      {%- if page.title -%}
-        <h1 class="page-heading">{{ page.title }}</h1>
-      {%- endif -%}
-    
-    
-      {% if site.paginate %}
-        {% assign posts = paginator.posts %}
-      {% else %}
-        {% assign posts = site.posts %}
-      {% endif %}
-    
-      
     
     </div>
   </body>

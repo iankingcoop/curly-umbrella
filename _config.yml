@@ -1,6 +1,4 @@
 theme: minima
-
-minima:
-  skin: dark
+skin: dark
 
 google_analytics: G-1Q7R1PRRVZ

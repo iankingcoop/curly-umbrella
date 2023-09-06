@@ -1,4 +1,4 @@
 remote_theme: jekyll/minima
 minima:
-  skin: solarized
+  skin: solarized-light
 google_analytics: G-1Q7R1PRRVZ

@@ -6,15 +6,14 @@ author:
 description: >
   Welcome to my blog! Subscribe for content on cloud security research, SOC automation, and more! Main site at https://iankingcoop.github.io/
 
-
-remote_theme: jekyll/minima
+theme: minima
 
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
 minima:
-  skin: solarized-dark
+  skin: solarized-light
   social_links:
      - { platform: linkedin,       user_url: "https://www.linkedin.com/in/ian-cooper" }
      - { platform: github,         user_url: "https://github.com/iankingcoop" }

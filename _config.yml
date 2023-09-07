@@ -1,7 +1,23 @@
+title: Cyberian blog
+author:
+  name: Ian Cooper
+  email: iankingcoop2@gmail.com
+
+description: >
+  Welcome to my blog! Subscribe for content on cloud security research, SOC automation, and more!
+
+
 remote_theme: jekyll/minima
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
 minima:
   skin: solarized-dark
   social_links:
      - { platform: linkedin,       user_url: "https://www.linkedin.com/in/ian-cooper" }
+     - { platform: github,         user_url: "https://github.com/iankingcoop" }
+     - { platform: twitter,        user_url: "https://twitter.com/IanK_Cooper" }
 
 google_analytics: G-1Q7R1PRRVZ

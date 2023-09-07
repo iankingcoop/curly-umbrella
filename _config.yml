@@ -3,8 +3,7 @@ author:
   name: Ian Cooper
   email: iankingcoop2@gmail.com
 
-description: >
-  Welcome to my blog! Subscribe for content on cloud security research, SOC automation, and more! Main site at https://iankingcoop.github.io/
+description: Welcome to my blog! Subscribe for content on cloud security research, SOC automation, and more! Main site at https://iankingcoop.github.io/
 
 remote_theme: jekyll/minima
 

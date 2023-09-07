@@ -6,7 +6,7 @@ author:
 description: >
   Welcome to my blog! Subscribe for content on cloud security research, SOC automation, and more! Main site at https://iankingcoop.github.io/
 
-theme: minima
+remote_theme: jekyll/minima
 
 plugins:
   - jekyll-feed

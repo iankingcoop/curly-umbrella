@@ -1,10 +1,9 @@
 title: Cyberian blog
 author:
   name: Ian Cooper
-  email: https://iankingcoop.github.io/
 
 description: >
-  Welcome to my blog! Subscribe for content on cloud security research, SOC automation, and more!
+  Welcome to my blog! Subscribe for content on cloud security research, SOC automation, and more! Main site at https://iankingcoop.github.io/
 
 
 remote_theme: jekyll/minima
